@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Outlet performance</title>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Outlet performance</h1>
+        <div class="sub" id="range"></div>
+      </div>
+      <div class="filters" id="filters"></div>
+    </header>
+
+    <div class="banner" id="banner" hidden></div>
+
+    <section class="kpis" id="kpis"></section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Sales as % of target</h2>
+        <div class="legend">
+          <span><i style="background:var(--bar)"></i>90% or above</span>
+          <span><i style="background:var(--bad)"></i>Below 90%</span>
+          <span><i style="background:var(--accent)"></i>Target (100%)</span>
+        </div>
+        <div class="chart" id="chart"></div>
+        <div class="xlabels" id="xlabels"></div>
+      </div>
+      <div class="card">
+        <h2>Needs attention</h2>
+        <div class="sub">Outlet-weeks under 90% of target</div>
+        <ul class="attn" id="attn"></ul>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
